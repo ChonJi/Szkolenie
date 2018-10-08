@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static core.SetUp.wait;
 
-public class DoodlePage extends Page{
+public class DoodlePage extends Page {
 
     @FindBy(className = "s20header")
     private WebElement header;
