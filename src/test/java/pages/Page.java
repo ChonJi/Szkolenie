@@ -4,9 +4,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import static core.SetUp.browser;
 
-public abstract class Page {
+abstract class Page {
 
-    Page() {
+    protected Page() {
         PageFactory.initElements(browser, this);
     }
 
