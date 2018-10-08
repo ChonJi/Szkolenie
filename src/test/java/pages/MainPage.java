@@ -20,9 +20,13 @@ public class MainPage extends Page {
     }
 
     public void clearSearchInput(String text) {
+
         for (int i = 1; i <= text.length(); i++) {
             element.sendKeys(Keys.BACK_SPACE);
         }
+//        for (char c : text.toCharArray()) {
+//            element.sendKeys(Keys.BACK_SPACE);
+//        }
         element.sendKeys(Keys.ESCAPE);
     }
 
