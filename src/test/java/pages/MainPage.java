@@ -3,23 +3,17 @@ package pages;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import static core.SetUp.browser;
 import static core.SetUp.wait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
-public class MainPage {
+public class MainPage extends Page {
 
     @FindBy(id = "lst-ib")
     private WebElement element;
 
     @FindBy(xpath = "//input[@value='Szczęśliwy traf']")
     private WebElement luckyShot;
-
-    public MainPage() {
-        PageFactory.initElements(browser, this);
-    }
 
     public void searchByKeys(final String text) {
         element.sendKeys(text);
