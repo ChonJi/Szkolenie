@@ -3,6 +3,7 @@ package dziedziczenie;
 public class Character {
 
     protected int hitpoints, mana;
+    protected int armor = 10;
 
     Character() {
         hitpoints = new Integer(10);
@@ -16,5 +17,9 @@ public class Character {
 
     public int getMana() {
         return mana;
+    }
+
+    public int armorBoost () {
+        return armor * 2;
     }
 }

@@ -9,6 +9,8 @@ public class Executor {
         System.out.println(kamil.getClass().getSimpleName() + " hitpoints: " + kamil.warriorHitpoints());
         System.out.println("Default hitpoints: " + kamil.getMana());
         System.out.println(kamil.getClass().getSimpleName() + " hitpoints: " + kamil.warriorMana());
+        System.out.println(kamil.armor - 5);
+        System.out.println(kamil.armorBoost() - 5);
     }
 
 }
