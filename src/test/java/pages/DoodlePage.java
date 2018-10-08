@@ -1,11 +1,13 @@
 package pages;
 
-import core.SetUp;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DoodlePage extends SetUp {
+import static core.SetUp.browser;
+import static core.SetUp.wait;
+
+public class DoodlePage {
 
     @FindBy(className = "s20header")
     private WebElement header;
