@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Objects {
 
-    private String a, b, c, d, e, f;
-
     public static void main(String[] args) {
         Objects objects = new Objects();
         objects.takeInputFromUserAndTellAJoke();
@@ -15,6 +13,7 @@ public class Objects {
 
         final String userInput;
         final Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj imię i nazwisko a poznasz swoją wróżbę:");
         userInput = scan.nextLine().toUpperCase();
         for (int i = 0; i < userInput.length(); i++) {
 
