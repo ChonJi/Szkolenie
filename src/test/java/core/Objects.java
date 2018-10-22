@@ -9,6 +9,9 @@ public class Objects {
         objects.takeInputFromUserAndTellAJoke();
     }
 
+    /**
+     * Changes single char typed by user to a different String and prints the sentence
+     */
     private void takeInputFromUserAndTellAJoke() {
 
         final String userInput;
