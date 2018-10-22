@@ -21,7 +21,7 @@ public class SetUp {
     }
 
     public MainPage openMainPage() {
-        browser.get("https://www.google.com");
+        browser.get("https://www.google.com/");
         browser.manage().window().maximize();
         assertThat(browser.getCurrentUrl()).isEqualTo("https://www.google.com/");
         return new MainPage();
